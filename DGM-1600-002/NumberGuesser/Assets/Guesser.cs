@@ -14,7 +14,7 @@ public class Guesser : MonoBehaviour {
 	private void Start () 
 	{
 		print ("Welcome to number guesser");
-		print ("Pick a number between " +min +" and " +max);
+		print ("Pick a number between " + min + " and " + max);
 		
 		//Is the value GUESS
 		print ("Is the number " + guess + "?");
@@ -31,14 +31,21 @@ public class Guesser : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			min = guess;
-			guess = (min+max) / 2;
+			guess = (min + max) / 2;
 			print ("Is the number " + guess + "?");
 		}
 
 		//Up Arrow command
 		if (Input.GetKeyDown(KeyCode.DownArrow))
 		{
-			print ("Do more stuff.");
+			max = guess;
+			guess = (min + max) / 2;
+			print ("Is the number " + guess + "?" );
+		}
+
+		if(Input.GetKeyDown(KeyCode.KeypadEnter))
+		{
+			print("I win!");
 		}
 
 		//Enter command
