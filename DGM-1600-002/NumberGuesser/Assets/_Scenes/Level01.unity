@@ -137,7 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 1000
   min: 1
-  guess: 500
+  guess: 567
+  count: 11
 --- !u!4 &1556515254
 Transform:
   m_ObjectHideFlags: 0
