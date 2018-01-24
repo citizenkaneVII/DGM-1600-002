@@ -51,10 +51,10 @@ public class TextAdventure : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		print (myState);
-		if (myState == States.title) 				{state_title ();} 
+		if 		(myState == States.title) 			{state_title ();} 
 		else if (myState == States.exposition_0)	{state_exposition_0();} 
-		else if (myState == States.exposition_1) 			{state_exposition_1();}
-		else if (myState == States.mirror)			{state_mirror ();}
+		else if (myState == States.exposition_1) 	{state_exposition_1();}
+		else if (myState == States.exposition_2)	{state_mirror ();}
 		else if (myState == States.cell_mirror)		{state_cell_mirror ();}
 		else if (myState == States.sheets_1)		{state_sheets_1 ();}
 		else if (myState == States.lock_1)			{state_lock_1 ();}
