@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44614ab767e56c64cb31af6e65e5d2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max: 1000
+  max: 1001
   min: 1
   guess: 567
-  count: 11
+  count: 16
 --- !u!4 &1556515254
 Transform:
   m_ObjectHideFlags: 0

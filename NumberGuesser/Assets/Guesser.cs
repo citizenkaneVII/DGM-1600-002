@@ -17,19 +17,19 @@ public class Guesser : MonoBehaviour {
 	// Use this for initialization
 	private void Start () 
 	{
-		max = max + 1;
+		//max = max + 1;
 		maxsave = max;
 		minsave = min;
 		countsave = count;
 
 		print ("Welcome to Number Guesser, dingus.");
 		print ("Pick a number between " + min + " and " + max);
-		
-		//Is the value NextGuess
-		NextGuess();
 
 		//Instructions - Push these buttons
 		print ("Press Up arrow for higher, Down arrow for lower, Enter for correct.  Think you got that?");
+	
+		//Is the value NextGuess
+		NextGuess();
 	}
 
 
@@ -39,7 +39,8 @@ public class Guesser : MonoBehaviour {
 	{
 		count = count - 1; //Count - 1
 		//figure out how to randomize guess********************
-		guess = (min + max) / 2;
+		guess = Random.Range(min,max);
+		//guess = (min + max) /2;
 		print ("Is the number " + guess + "?");
 	}
 	
@@ -63,11 +64,19 @@ public class Guesser : MonoBehaviour {
 		if (count == 0)
 		{
 			print("You Suck! I Hate You! YOU Win...");
+			if (Input.GetKeyDown(KeyCode.R))
+				{
+					Restart();
+				}
 		}
 
 		else if (guess == 666)
 		{
 			print ("Hail Satan.");
+			if (Input.GetKeyDown(KeyCode.R))
+				{
+					Restart();
+				}
 		}
 
 		//Down Arrow command
