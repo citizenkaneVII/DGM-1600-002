@@ -7,7 +7,9 @@ public class TextAdventure : MonoBehaviour {
 	public Text text;
 	private States myState;
 	private enum States 
-	
+	public Text textObject;
+
+
 	{
 		title,
 		exposition0,
@@ -24,7 +26,7 @@ public class TextAdventure : MonoBehaviour {
 		offer0,
 		knife,
 		knife0,
-		Slaughter,
+		slaughter,
 		hide,
 		vagabond,
 		cheese,
@@ -52,50 +54,56 @@ public class TextAdventure : MonoBehaviour {
 	void Update () {
 		print (myState);
 		if 		(myState == States.title) 			{state_title ();} 
-		else if (myState == States.exposition_0)	{state_exposition_0();} 
-		else if (myState == States.exposition_1) 	{state_exposition_1();}
-		else if (myState == States.exposition_2)	{state_mirror ();}
-		else if (myState == States.cell_mirror)		{state_cell_mirror ();}
-		else if (myState == States.sheets_1)		{state_sheets_1 ();}
-		else if (myState == States.lock_1)			{state_lock_1 ();}
-		else if (myState == States.freedom)			{state_freedom ();}
-		else if (myState == States.corridor_0)		{state_corridor_0 ();}
-		else if (myState == States.corridor_1)		{state_corridor_1 ();}	
-		else if (myState == States.corridor_2)		{state_corridor_2 ();}	
-		else if (myState == States.corridor_3)		{state_corridor_3 ();}	
-		else if (myState == States.stairs_0)		{state_stairs_0 ();}	
-	
-		else if (myState == States.stairs_2)		{state_stairs_2 ();}	
-		else if (myState == States.floor)			{state_floor ();}		
-		else if (myState == States.closet_door)		{state_closet_door ();}	
-		else if (myState == States.in_closet)		{state_in_closet ();}	
-		else if (myState == States.courtyard)		{state_courtyard ();}	
+		else if (myState == States.exposition_0)	{state_exposition_0 ();} 
+		else if (myState == States.exposition_1) 	{state_exposition_1 ();}
+		else if (myState == States.exposition_2)	{state_exposition_2 ();}
+		else if (myState == States.cell_right)		{state_right ();}
+		else if (myState == States.left)			{state_left ();}
+		else if (myState == States.fork)			{state_fork ();}
+		else if (myState == States.look)			{state_look ();}
+		else if (myState == States.runaway_0)		{state_runaway ();}
+		else if (myState == States.runaway_0)		{state_runaway_0 ();}	
+		else if (myState == States.bread)			{state_bread ();}	
+		else if (myState == States.offer)			{state_offer ();}	
+		else if (myState == States.offer_0)			{state_offer_0 ();}	
+		else if (myState == States.knife)			{state_knife ();}	
+		else if (myState == States.knife_0)			{state_knife_0 ();}		
+		else if (myState == States.slaughter)		{state_slaughter ();}	
+		else if (myState == States.hide)			{state_hide ();}	
+		else if (myState == States.vagabond)		{state_vagabond ();}
+		else if (myState == States.cheese)			{state_cheese ();}
+		else if (myState == States.lie)				{state_lie ();}
+		else if (myState == States.magicgem_turd)	{state_magicgem_turd ();}
+		else if (myState == States.throw)			{state_throw ();}
+		else if (myState == States.squeeze)			{state_squeeze ();}
+		else if (myState == States.gold)			{state_gold ();}
+		else if (myState == States.cut)				{state_cut ();}
+		else if (myState == States.never)			{state_never ();}
+		else if (myState == States.ax)				{state_ax ();}
 		}
 	
 	
 	
 	void state_title ()
 		{
-		text.text = "The Legend of BOOTS" +
-					"Press Space to Start" +
-		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition0;} 
+		textObject.text = 	"The Legend of BOOTS" +
+							"Press SPACE to Start" +
+		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_0;} 
 		}
 	
 	
-	void state_lock_0 () {
-		text.text = "This is one of those button locks.  You have no idea what the " +
-					"combination is. You wish you could somehow see where the dirty " +
-					"fingerprints were, maybe that would help. \n\n " +
-					"Press R to Return to roaming your cell";
-		if 		(Input.GetKeyDown(KeyCode.R)) 	{myState = States.cell;}
+	void state_exposition_0 () {
+		textObject.text	 = 	"Once upon a time, a poor widowed farmer owed a lot of money to the king. " +
+							"He had three sons.  The two older sons made fun of the youngest son named Boots. \n\n" +
+							"Press SPACE to Continue";
+		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_1;}
 		}
 	
 	
-	void state_sheets_0 () {
-		text.text = "You look at the sheets that have shmutz and all manner of stains " +
-					"on it.  You ponder how many bloodbourne pathengeons are on it.  To " +
-					"think you sleep in this every night. \n\n " +
-					"Press R to Return to roaming your cell";
+	void state_exposition_2 () {
+		textObject.text	 =	"The two older brothers would chop wood in the forest so they could sell it. " +
+							"One day when a troll scared them away, Boots decided to go into the forest. \n\n " +
+							"Press SPACE to Continue";
 		if 		(Input.GetKeyDown(KeyCode.R))	{myState = States.cell;}
 		}
 
