@@ -8,6 +8,7 @@ public class TextAdventure : MonoBehaviour {
 	private States myState;
 	private enum States 
 	public Text textObject;
+	public Text titleObject;
 
 
 	{
@@ -61,6 +62,7 @@ public class TextAdventure : MonoBehaviour {
 		else if (myState == States.left)			{state_left ();}
 		else if (myState == States.fork)			{state_fork ();}
 		else if (myState == States.look)			{state_look ();}
+		else if (myState == States.look_0)			{state_look_0 ();}
 		else if (myState == States.runaway_0)		{state_runaway ();}
 		else if (myState == States.runaway_0)		{state_runaway_0 ();}	
 		else if (myState == States.bread)			{state_bread ();}	
@@ -86,6 +88,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	void state_title ()
 		{
+		textObject.title =  "The Legend of BOOTS"
 		textObject.text = 	"The Legend of BOOTS" +
 							"Press SPACE to Start" +
 		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_0;} 
@@ -100,108 +103,142 @@ public class TextAdventure : MonoBehaviour {
 		}
 	
 	
-	void state_exposition_2 () {
+	void state_exposition_1 () {
 		textObject.text	 =	"The two older brothers would chop wood in the forest so they could sell it. " +
 							"One day when a troll scared them away, Boots decided to go into the forest. \n\n " +
 							"Press SPACE to Continue";
-		if 		(Input.GetKeyDown(KeyCode.R))	{myState = States.cell;}
+		if 		(Input.GetKeyDown(KeyCode.Space))	{myState = States.exposition_2;}
 		}
 
 
-	void state_mirror () {
-		text.text = "You see your worn face and you question what has brought you here. " +
-					"To think this all started when you refused to walk grandmother's monkey. " +
-					"On another note, it seems you can remove this mirror from the wall.\n\n" +
-					"Press T to Take mirror, press R to Return to roaming your cell";
-		if 		(Input.GetKeyDown(KeyCode.T))	{myState = States.cell_mirror;}
-		else if (Input.GetKeyDown(KeyCode.R)) 	{myState = States.cell;}
+	void state_exposition_2 () {
+		text.text = 		"You are given a bag with some bread, cheese, and a knife.   " +
+							"You march out into the forest.  A fork lies in front of you.   " +
+							"Do you go left or right?\n\n" +
+							"Press L to go LEFT "+
+							"Press R to go RIGHT";
+		if 		(Input.GetKeyDown(KeyCode.L))		{myState = States.left;}
+		else if (Input.GetKeyDown(KeyCode.R)) 		{myState = States.right;}
 		}
 	
 	
-	void state_cell_mirror () {
-		text.text = "You stand in your cell holding the mirror.\n\n" +
-					"Press S to view Sheets, press L to view Lock";
-		if 		(Input.GetKeyDown(KeyCode.S))	{myState = States.sheets_1;}
-		else if (Input.GetKeyDown(KeyCode.L))	{myState = States.lock_1;}
+	void state_right () {
+		text.text = 		"You reach a dead end.  Brush and trees surround you with no end in sight.\n\n" +
+							"Press F to go back to the FORK";
+		if 		(Input.GetKeyDown(KeyCode.F))		{myState = States.fork;}
 		}
 	
 	
-	void state_sheets_1 () {
-		text.text = "You can't use a freaking mirror on your bed, how would that even work?\n\n" +
-					"Press R to Return to roaming your cell";
-		if 		(Input.GetKeyDown (KeyCode.R))	{myState = States.cell_mirror;}
+	void state_fork () {
+		text.text = 		"A Fork lies in front of you.  Do you go left or right?\n\n" +
+							"Press L to go LEFT "+
+							"Press R to go RIGHT";
+		if 		(Input.GetKeyDown(KeyCode.L))		{myState = States.left;}
+		else if (Input.GetKeyDown(KeyCode.R)) 		{myState = States.right;}
 		}
 	
 	
-	void state_lock_1 () {
-		text.text = "Man, whoever locked you up in here must of been high, cause you can totally " +
-					"see which buttons he was pressing!\n\n" +
-					"Press O to Open the lock, press R to Return to roaming your cell";
-		if 		(Input.GetKeyDown(KeyCode.O))		{myState = States.corridor_0;}
-		else if (Input.GetKeyDown(KeyCode.R))		{myState = States.cell_mirror;}
+	void state_left () {
+		text.text = 		"You reach the clearing where your brother's have chopped wood. \n\n " +
+							"Press L to Look around,";
+		if 		(Input.GetKeyDown(KeyCode.L))		{myState = States.look;}
 		}
 	
 	
-	void state_freedom () {
-		text.text = "HAHA!!  SUCKERS!!!  You're home free now!  All you gotta do is get out of here!\n\n" +
-					"Press P to Play again!";
-		if 		(Input.GetKeyDown(KeyCode.P))		{myState = States.cell;}			
+	void state_look () {
+		text.text = 		"As you walk among the tree stumps, you  see a large foot print in the ground. " +
+							"You hear a loud CRUNCH.  Looking up, you see a large Troll carrying a great ax.\n\n" +
+							"'I'm goin' ta' eat ya!!' he roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+
+void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
 		}
 
 	
-	void state_corridor_0 () {
-		text.text = "HAHA!  Man, who ever made that lock was a freaking tard!  You're out of your " +
-					"prison cell, but make a wrong move and it'll be back to the slammer.\n\n" +
-					"Press S to go up the Stairs, press C to open the closet, press F to examine floor";
-		if 		(Input.GetKeyDown(KeyCode.S))	{myState = States.stairs_0;}
-		else if (Input.GetKeyDown(KeyCode.C)) 	{myState = States.closet_door;}
-		else if (Input.GetKeyDown(KeyCode.F)) 	{myState = States.floor;}
+	void state_runaway () {
+		text.text = 		"You attempt to run away but before you even get the chance to turn around, " +
+							"the Troll picks you up with his massive hands and bites off your head!\n\n" +
+							"Press Space to Start Over";
+		if 		(Input.GetKeyDown(KeyCode.Space))	{myState = States.title;}
 		}		
 			
+
+	void state_runaway_0 () {
+		text.text =			"You run as he stuffs his face.  Unfortunately, the bread is not enough. " +
+							"He begins to chase after you.\n\n" +
+							"R to RUN home"
+							"H to HIDE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.slaughter;}
+		else if (Input.GetKeyDown(KeyCode.H)) 		{myState = States.hide;}
+		}		
 		
-	void state_stairs_0 () {
-		text.text = "A guard waits at the top.  Upon seeing you, he sighs before cracking his knuckles. " +
-					"You picked the wrong day buddy.\n\n" +
-					"Press F to Fight, press R to Retreat";
-		if 		(Input.GetKeyDown(KeyCode.F))	{myState = States.cell;}
-		else if (Input.GetKeyDown(KeyCode.R)) 	{myState = States.cell;}
+	void state_bread () {
+		text.text = 		"You pull out the bread your father gave you.  It's a bit moldy, but maybe the troll won't mind?\n\n" +
+							"O to OFFER" +
+							"W to WITHDRAW";
+		if 		(Input.GetKeyDown(KeyCode.O))		{myState = States.offer;}
+		else if (Input.GetKeyDown(KeyCode.W)) 		{myState = States.look_0;}
 		}								
 									
 										
-	void state_closet_door () {
-		text.text = "It's locked, what did you think was going to happen? \n\n" +
-					"Press R to Return to the corridor";
-		if 		(Input.GetKeyDown(KeyCode.R))	{myState = States.corridor_0;}
+	void state_offer () {
+		text.text = 		"You offer him the moldy bread.  Quickly he snatches it from you, shoving it in his filthy face. \n\n" +
+							"R to RUNAWAY"+
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.W)) 		{myState = States.knife_0;}
 		}											
 												
 													
-	void state_floor () {
-		text.text = "For some reason, stairing at your shoes seems like a good idea. Looking " +
-					"down, you notice a hairclip on the floor.\n\n" +
-					"Press H to pick up the Hairclip, press L to Leave it";
-		if 		(Input.GetKeyDown(KeyCode.H))	{myState = States.corridor_1;}
-		else if (Input.GetKeyDown(KeyCode.L)) 	{myState = States.corridor_0;}
+	void state_knife () {
+		text.text = 		"You attempt to stab him in an all out attack.  Before you can stab him, " +
+							"he picks you up in one swipe and bites your head off.\n\n" +
+							"GAME OVER\n\n"
+							"Press SPACE to Restart";
+		if 		(Input.GetKeyDown(KeyCode.Space))		{myState = States.Title;}
 		}																									
 																																																		
 		
-	void state_corridor_1 () {
-		text.text = "Good job, you have a hair clip, now what? \n\n" +
-					"Press S to go up the Stairs, press P to Pick the closet lock";
-		if 		(Input.GetKeyDown(KeyCode.S))	{myState = States.stairs_0;}
-		else if (Input.GetKeyDown(KeyCode.P)) 	{myState = States.in_closet;}
+	void state_knife_0 () {
+		text.text = 		"You manage to stab the Troll in the knee.  He howls with pain. \n\n" +
+							"S to keep STABBING him"+
+							"R to RUNAWAY";
+		if 		(Input.GetKeyDown(KeyCode.S))		{myState = States.knife;}
+		else if (Input.GetKeyDown(KeyCode.P)) 		{myState = States.runaway_0;}
 		}															
 		
 		
-	void state_in_closet () {
-		text.text = "You unlocked the closet door.  You see a janitors uniform hanging" +
-					"inside.\n\n" +
-					"Press D to Dress, press L to Leave it";
-		if 		(Input.GetKeyDown(KeyCode.D))	{myState = States.corridor_3;}
-		else if (Input.GetKeyDown(KeyCode.L)) 	{myState = States.corridor_0;}
+	void state_hide () {
+		text.text = 		"You hide behind some bushes.  He stops nearby in a grove, screaming \n\n" +
+							"'I'm goin' kill you boy!!!'\n\n" +
+							"He continues to look for you, but he can't find you.  Eventually, he gives up. " +
+							"It's safe to come out. \n\n"  +
+							"H to go HOME";
+		if 		(Input.GetKeyDown(KeyCode.H))	{myState = vagabond;}
 		}											
 		
 																												
-	void state_corridor_2 () {
+	void state_hide_0 () {
 		text.text = "You stand in the hall like a ding-dong.\n\n  " +
 			"Press S to go up the Stairs, press C to open the closet";
 		if 		(Input.GetKeyDown(KeyCode.S))	{myState = States.stairs_0;}
@@ -209,15 +246,17 @@ public class TextAdventure : MonoBehaviour {
 		}
 		
 		
-	void state_corridor_3 () {
-		text.text = "You look like a proper janitor now!  \n\n" +
-					"Press U to Undress, press S to go up the stairs";
+	void state_vagabond () {
+		text.text = 		"You make it home, but it's clear that you can't go back in the woods.  You and your family" +
+							"are forced to leave the woods and become vagabonds.\n\n" +
+							"GAME OVER \n\n" +
+							"Press START to restart";
 		if 		(Input.GetKeyDown(KeyCode.U))	{myState = States.corridor_2;}
 		else if (Input.GetKeyDown(KeyCode.S)) 	{myState = States.stairs_2;}
 		}																																																													
 	
 	
-	void state_stairs_2 () {
+	void state_slaughter () {
 		text.text = "You ascend the stairs.  You see the guard standing in front of a door. " +
 					"He gives you a look of bad attitude.  Otherwise, he dosen't seem to care.\n\n" +
 					"Press F to Fight him, press E to Exit through the door";

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a9971b018a2614f4da9c88982a7cf3af
+timeCreated: 1517243763
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Helmet
+  fontNames:
+  - Helmet
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
