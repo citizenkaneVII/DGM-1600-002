@@ -237,43 +237,126 @@ void state_look_0 () {
 		if 		(Input.GetKeyDown(KeyCode.H))	{myState = vagabond;}
 		}											
 		
-																												
-	void state_hide_0 () {
-		text.text = "You stand in the hall like a ding-dong.\n\n  " +
-			"Press S to go up the Stairs, press C to open the closet";
-		if 		(Input.GetKeyDown(KeyCode.S))	{myState = States.stairs_0;}
-		else if (Input.GetKeyDown(KeyCode.C)) 	{myState = States.in_closet;}
-		}
-		
 		
 	void state_vagabond () {
 		text.text = 		"You make it home, but it's clear that you can't go back in the woods.  You and your family" +
 							"are forced to leave the woods and become vagabonds.\n\n" +
 							"GAME OVER \n\n" +
-							"Press START to restart";
-		if 		(Input.GetKeyDown(KeyCode.U))	{myState = States.corridor_2;}
-		else if (Input.GetKeyDown(KeyCode.S)) 	{myState = States.stairs_2;}
+							"Press SPACE to restart";
+		if 		(Input.GetKeyDown(KeyCode.Space))	{myState = States.title;}
 		}																																																													
 	
 	
 	void state_slaughter () {
-		text.text = "You ascend the stairs.  You see the guard standing in front of a door. " +
-					"He gives you a look of bad attitude.  Otherwise, he dosen't seem to care.\n\n" +
-					"Press F to Fight him, press E to Exit through the door";
-		if 		(Input.GetKeyDown(KeyCode.F))	{myState = States.cell;}
-		else if (Input.GetKeyDown(KeyCode.E)) 	{myState = States.courtyard;}
+		text.text = 		"You run all the way home, but your speed couldn't outmatch his giant leaps.  As you run into your house, " +
+							"the Troll runs at it and smashes the thing to pieces. You and your entire family is slaughtered.\n\n" +
+							"GAME OVER \n\n" +
+							"Press SPACE to Restart";
+		if 		(Input.GetKeyDown(KeyCode.Space))	{myState = States.title;}
 		}		
 	
 	
-	void state_courtyard () {
-		text.text = "You did it!  You escaped this heck hole and are on your way to  " +
-					"freedom!  Horay for no cosequences!  So long suckas!\n\n" +
-					"Press P to Play again";
-		if 		(Input.GetKeyDown(KeyCode.P))	{myState = States.cell;}
-		}		
-	
-	
-	
+	void state_cheese () {
+		text.text = 		"You pull out the cheese.  The Troll looks at it.\n\n"
+							"'Oi! What's that you got there boy?' he snarls.\n\n"
+							"O to OFFER" +
+							"L to LIE" +
+							"T to THROW";
+		if 		(Input.GetKeyDown(KeyCode.O))		{myState = States.offer_0;}
+		else if (Input.GetKeyDown(KeyCode.L)) 		{myState = States.lie;}
+		else if (Input.GetKeyDown(KeyCode.T)) 		{myState = States.throw;}		
+		}
+
+		void state_offer_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
+
+		void state_look_0 () {
+		text.text = 		"'I'm goin' ta' eat ya!!' the Troll roars.\n\n"
+							"What do you do?\n\n"
+							"R to RUNAWAY" +
+							"B to use BREAD" +
+							"C to use CHEESE" +
+							"K to use KNIFE";
+		if 		(Input.GetKeyDown(KeyCode.R))		{myState = States.runaway;}
+		else if (Input.GetKeyDown(KeyCode.B)) 		{myState = States.bread;}
+		else if (Input.GetKeyDown(KeyCode.C)) 		{myState = States.cheese;}
+		else if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.knife;}			
+		}
 	
 	
 	
