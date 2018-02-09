@@ -113,7 +113,7 @@ public class TextAdventure : MonoBehaviour {
 
 	void state_exposition_2 () {
 		text.text = 		"You are given a bag with some bread, cheese, and a knife.  " +
-							"You march out into the forest.  A fork lies in front of you.\n" +
+							"You march out into the forest.  A fork lies in front of you.\n\n" +
 							"Do you go left or right?\n\n\n" +
 							"Press L to go LEFT \n"+
 							"Press R to go RIGHT";
