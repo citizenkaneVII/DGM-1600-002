@@ -3,27 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour 
+{
+	public static GameManager instance = null;
+	public static int brickCount;
 
-public static GameManager instance = null;
-
-	void Awake() 
-	{
-		//singlton
-		if (instance == null)		//if instance not assigned
+		void Awake() 
 		{
-			instance = this;		//then assign instance to this object
+			//singlton
+			if (instance == null)		//if instance not assigned
+			{
+				instance = this;		//then assign instance to this object
+			}
+			else if (instance != this)
+			{
+				Destroy(this.gameObject);	//then destroy this object
+			}
+			DontDestroyOnLoad(this.gameObject);
 		}
-		else if (instance != this)
-		{
-			Destroy(this.gameObject);	//then destroy this object
-		}
-		DontDestroyOnLoad(this.gameObject);
-	}
 
 
-public void LoadLevel (string level) 
+	public void LoadLevel (string level) 
 	{
+		brickCount = 0;
 		SceneManager.LoadScene(level);
 	}
+
+	public void LoadNextLevel()
+	{
+		brickCount = 0;
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
+//	public void SomeFunction()
+//	{
+		
+//	}
 }

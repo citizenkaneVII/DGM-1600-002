@@ -121,7 +121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196424432587786, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 4196424432587786, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
       propertyPath: m_LocalPosition.z
@@ -188,10 +188,6 @@ Prefab:
     - target: {fileID: 4811680880959182, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553839574574528, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
@@ -380,7 +376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4313380704083070, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.11
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 4313380704083070, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -535,26 +531,11 @@ Prefab:
     - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
         type: 2}
       propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
-        type: 2}
-      propertyPath: m_LinearDrag
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
         type: 2}
       propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
-        type: 2}
-      propertyPath: m_Mass
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
-        type: 2}
-      propertyPath: m_SleepingMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
