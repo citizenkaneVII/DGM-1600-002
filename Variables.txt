@@ -1,0 +1,5 @@
+Steven Connell
+Variables
+2/21/2018
+
+four of the basic data types are Bools, int

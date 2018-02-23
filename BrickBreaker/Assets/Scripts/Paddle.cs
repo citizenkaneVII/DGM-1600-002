@@ -15,7 +15,7 @@ public class Paddle : MonoBehaviour {
 		//set verticle off set
 
 		//get mouse position
-		float mousePositionInBlocks = Input.mousePosition.x / Screen.width * 16 - 8;
+		float mousePositionInBlocks = Mathf.Clamp(Input.mousePosition.x / Screen.width * 16 - 8, -8f, 8f);
 
 		//convert mouse position to world space
 		//save new position
