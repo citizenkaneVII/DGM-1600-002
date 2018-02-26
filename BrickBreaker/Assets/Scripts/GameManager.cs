@@ -15,10 +15,12 @@ public class GameManager : MonoBehaviour
 			{
 				instance = this;		//then assign instance to this object
 			}
+			
 			else if (instance != this)
 			{
 				Destroy(this.gameObject);	//then destroy this object
 			}
+			
 			DontDestroyOnLoad(this.gameObject);
 		}
 
@@ -35,8 +37,9 @@ public class GameManager : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
-//	public void SomeFunction()
-//	{
-		
-//	}
+	public void QuitGame()
+	{
+		Debug.Log("Quit Game");
+		Application.Quit();
+	}
 }
