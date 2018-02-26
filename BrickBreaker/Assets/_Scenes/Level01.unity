@@ -4310,6 +4310,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 82932835350377958, guid: 2205df251b4d3e54bafd1a877d525b17,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0dbbf4a5df3e743408671fcda24ac1c1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
   m_IsPrefabParent: 0
@@ -4355,7 +4360,7 @@ Prefab:
     - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
         type: 2}
       propertyPath: m_GravityScale
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
         type: 2}
