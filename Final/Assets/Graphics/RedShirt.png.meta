@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 699058769be2372488a670f237746708
-timeCreated: 1519838811
+timeCreated: 1520009463
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -12,38 +12,38 @@ TextureImporter:
     21300010: down_5
     21300012: down_6
     21300014: down_7
-    21300016: up_8
-    21300018: up_9
-    21300020: up_10
-    21300022: up_11
-    21300024: up_12
-    21300026: up_13
-    21300028: up_14
-    21300030: up_15
-    21300032: side_16
-    21300034: side_17
-    21300036: side_18
-    21300038: side_19
-    21300040: side_20
-    21300042: side_21
-    21300044: side_22
-    21300046: side_23
-    21300048: RedShirt_24
-    21300050: RedShirt_25
-    21300052: RedShirt_26
-    21300054: RedShirt_27
-    21300056: RedShirt_28
-    21300058: RedShirt_29
-    21300060: RedShirt_30
-    21300062: RedShirt_31
-    21300064: RedShirt_32
-    21300066: RedShirt_33
-    21300068: RedShirt_34
-    21300070: RedShirt_35
-    21300072: RedShirt_36
-    21300074: RedShirt_37
-    21300076: RedShirt_38
-    21300078: RedShirt_39
+    21300016: up_0
+    21300018: up_1
+    21300020: up_2
+    21300022: up_3
+    21300024: up_4
+    21300026: up_5
+    21300028: up_6
+    21300030: up_7
+    21300032: side_0
+    21300034: side_1
+    21300036: side_2
+    21300038: side_3
+    21300040: side_4
+    21300042: side_5
+    21300044: side_6
+    21300046: side_7
+    21300048: side_8
+    21300050: side_9
+    21300052: side_10
+    21300054: side_11
+    21300056: side_12
+    21300058: side_13
+    21300060: side_14
+    21300062: side_15
+    21300064: side_16
+    21300066: side_17
+    21300068: side_18
+    21300070: side_19
+    21300072: side_20
+    21300074: side_21
+    21300076: side_22
+    21300078: side_23
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -259,7 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_8
+      name: up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -273,7 +273,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_9
+      name: up_1
       rect:
         serializedVersion: 2
         x: 15
@@ -287,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_10
+      name: up_2
       rect:
         serializedVersion: 2
         x: 29
@@ -301,7 +301,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_11
+      name: up_3
       rect:
         serializedVersion: 2
         x: 45
@@ -315,7 +315,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_12
+      name: up_4
       rect:
         serializedVersion: 2
         x: 60
@@ -329,7 +329,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_13
+      name: up_5
       rect:
         serializedVersion: 2
         x: 75
@@ -343,7 +343,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_14
+      name: up_6
       rect:
         serializedVersion: 2
         x: 90
@@ -357,11 +357,235 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_15
+      name: up_7
       rect:
         serializedVersion: 2
         x: 105
         y: 98
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 83
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 68
+        width: 15
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: side_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 68
         width: 15
         height: 15
       alignment: 1
@@ -375,7 +599,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -389,7 +613,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 15
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -403,7 +627,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -417,7 +641,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 45
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -431,7 +655,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -445,7 +669,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -459,7 +683,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 83
+        y: 53
         width: 15
         height: 15
       alignment: 1
@@ -470,230 +694,6 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: side_23
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 83
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_25
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_26
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_27
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_28
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_29
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_30
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_31
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 68
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_33
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_34
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_35
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_36
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_37
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_38
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 53
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RedShirt_39
       rect:
         serializedVersion: 2
         x: 105
