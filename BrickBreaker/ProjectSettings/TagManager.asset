@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: DiscoBall
+    uniqueID: 1050361503
+    locked: 0
+  - name: New Layer
+    uniqueID: 3069101585
+    locked: 0
+  - name: New Layer
+    uniqueID: 98128157
+    locked: 0
+  - name: New Layer
+    uniqueID: 2789214251
+    locked: 0
+  - name: New Layer
+    uniqueID: 2651075479
+    locked: 0
+  - name: DiscoBackground
+    uniqueID: 4196469601
+    locked: 0

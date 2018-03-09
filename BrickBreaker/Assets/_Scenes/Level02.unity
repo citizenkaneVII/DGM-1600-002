@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872692, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4811680880959182, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1553839574574528, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
       propertyPath: m_TagString
@@ -300,7 +300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196424432587786, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
       propertyPath: m_RootOrder
-      value: 43
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1958451592690340, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
       propertyPath: m_Name
@@ -418,7 +418,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.81568635, g: 0.8117648, b: 0.81568635, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -472,7 +472,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4071822705086818, guid: ccd2c27f240439345bb4083295051822, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.12
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4071822705086818, guid: ccd2c27f240439345bb4083295051822, type: 2}
       propertyPath: m_LocalPosition.y
@@ -500,7 +500,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071822705086818, guid: ccd2c27f240439345bb4083295051822, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
         type: 2}
@@ -552,6 +552,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300004, guid: 528102f6994d2ec42b2f62632f2cd9ff,
         type: 3}
+    - target: {fileID: 50714457882095300, guid: ccd2c27f240439345bb4083295051822,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0ee0cb13483ceb84ebf2f52359204a5e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccd2c27f240439345bb4083295051822, type: 2}
   m_IsPrefabParent: 0
@@ -765,7 +770,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1586338641}
   serializedVersion: 5
-  lengthInSec: 3
+  lengthInSec: 15
   simulationSpeed: 1
   stopAction: 0
   looping: 1
@@ -818,7 +823,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 340946196
+  randomSeed: -242587462
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -866,7 +871,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3.5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1261,11 +1266,11 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
-    angle: 25
+    type: 0
+    angle: 81.592094
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -1283,7 +1288,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 5.15
       mode: 0
       spread: 0
       speed:
@@ -1378,7 +1383,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 15
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1586,7 +1591,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   RotationModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -1672,7 +1677,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.7853982
+      scalar: 1.2117821
       minScalar: 0.7853982
       maxCurve:
         serializedVersion: 2
@@ -4180,13 +4185,14 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 0dbbf4a5df3e743408671fcda24ac1c1, type: 3}
+      objectReference: {fileID: 8300000, guid: 3089d4056b6f2ba458fa06465f2b34ff, type: 3}
     - target: {fileID: 82932835350377958, guid: 2205df251b4d3e54bafd1a877d525b17,
         type: 2}
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114080364154043252, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1630592748

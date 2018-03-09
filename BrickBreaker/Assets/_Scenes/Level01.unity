@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872692, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -257,6 +257,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300008, guid: 490ed8ae44185964db81035397d62bfd,
         type: 3}
+    - target: {fileID: 1553839574574528, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
+      propertyPath: m_Name
+      value: StreetPaddle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
   m_IsPrefabParent: 0
@@ -885,6 +889,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300004, guid: 490ed8ae44185964db81035397d62bfd,
         type: 3}
+    - target: {fileID: 1704942170398294, guid: ccd2c27f240439345bb4083295051822, type: 2}
+      propertyPath: m_Name
+      value: StreetBall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccd2c27f240439345bb4083295051822, type: 2}
   m_IsPrefabParent: 0
