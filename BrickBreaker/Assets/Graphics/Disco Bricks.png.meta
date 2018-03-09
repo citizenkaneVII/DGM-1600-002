@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 528102f6994d2ec42b2f62632f2cd9ff
-timeCreated: 1520535557
+timeCreated: 1520563564
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Disco Bricks_0
-    21300002: Disco Bricks_1
-    21300004: Disco Bricks_2
-    21300006: Disco Bricks_3
-    21300008: Disco Bricks_4
+    21300000: DiscoBrickGreen
+    21300002: DiscoBrickYellow
+    21300004: DiscoBall
+    21300006: DiscoBrickRed
+    21300008: DiscoPaddle
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -65,7 +65,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Disco Bricks_0
+      name: DiscoBrickGreen
       rect:
         serializedVersion: 2
         x: 0
@@ -103,13 +103,13 @@ TextureImporter:
         width: 19
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Disco Bricks_1
+      name: DiscoBrickYellow
       rect:
         serializedVersion: 2
         x: 0
@@ -117,13 +117,13 @@ TextureImporter:
         width: 19
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Disco Bricks_2
+      name: DiscoBall
       rect:
         serializedVersion: 2
         x: 21
@@ -131,13 +131,13 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Disco Bricks_3
+      name: DiscoBrickRed
       rect:
         serializedVersion: 2
         x: 0
@@ -145,13 +145,13 @@ TextureImporter:
         width: 19
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Disco Bricks_4
+      name: DiscoPaddle
       rect:
         serializedVersion: 2
         x: 0
@@ -159,7 +159,7 @@ TextureImporter:
         width: 19
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
