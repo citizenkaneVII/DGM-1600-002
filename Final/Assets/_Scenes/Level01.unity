@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 169057179}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -550,6 +550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 1801632891}
   speed: 4.5
+  jump: 100
 --- !u!95 &1801632896
 Animator:
   serializedVersion: 3
