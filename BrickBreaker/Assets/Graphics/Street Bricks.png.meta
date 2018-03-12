@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 490ed8ae44185964db81035397d62bfd
-timeCreated: 1520563506
+guid: 334d2323f18d76b4cb631c0cb1d1a03f
+timeCreated: 1520889395
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Street Bricks 1
-    21300002: Street Bricks 2
-    21300004: Streetball
+    21300000: StreetBrick1
+    21300002: StreetBrick2
+    21300004: StreetBall
     21300006: StreetBrick3
     21300008: StreetPaddle
-    21300010: StreetBrick1
-    21300012: StreetBrick2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -43,7 +41,7 @@ TextureImporter:
     mipBias: -1
     wrapU: 1
     wrapV: 0
-    wrapW: 0
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -74,6 +72,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -115,7 +123,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Streetball
+      name: StreetBall
       rect:
         serializedVersion: 2
         x: 21
