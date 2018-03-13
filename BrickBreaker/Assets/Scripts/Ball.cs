@@ -12,9 +12,9 @@ public class Ball : MonoBehaviour {
 		GetComponent<Rigidbody2D>().AddForce(startVector, ForceMode2D.Force);
 	}
 
-	/*private void OnCollisionEnter2D(Collision2D other)
+	private void OnCollisionEnter2D(Collision2D other)
 	{
-		AudioSource.PlayClipAtPoint(HitSound, new Vector3 (0, 0, 0));
-	}*/
+		AudioSource.PlayClipAtPoint(hitSound, new Vector3 (0, 0, 0));
+	}
 
 }
