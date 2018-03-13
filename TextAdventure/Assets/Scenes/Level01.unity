@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872692, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &485969502
 GameObject:
@@ -241,11 +246,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &529956847
 Transform:
   m_ObjectHideFlags: 0
@@ -285,14 +290,14 @@ RectTransform:
   m_GameObject: {fileID: 559778132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4500958, y: 1, z: 1}
+  m_LocalScale: {x: 1.4500958, y: 1.2125134, z: 1}
   m_Children: []
   m_Father: {fileID: 962773384}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 157}
+  m_AnchoredPosition: {x: 0, y: 107}
   m_SizeDelta: {x: 574.1, y: 345.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559778134
@@ -351,6 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleObject: {fileID: 559778134}
   text: {fileID: 1896234488}
+  Forest: {fileID: 1401410414}
+  InsideForest: {fileID: 1522586871}
 --- !u!1 &962773380
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,10 +403,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 1
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -437,8 +444,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1886009008}
-  - {fileID: 559778133}
+  - {fileID: 1401410413}
   - {fileID: 1771130695}
+  - {fileID: 1522586870}
+  - {fileID: 559778133}
   - {fileID: 1896234487}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -477,6 +486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleObject: {fileID: 0}
   text: {fileID: 0}
+  Forest: {fileID: 0}
+  InsideForest: {fileID: 0}
 --- !u!4 &1280881506
 Transform:
   m_ObjectHideFlags: 0
@@ -500,6 +511,7 @@ GameObject:
   - component: {fileID: 1401410413}
   - component: {fileID: 1401410415}
   - component: {fileID: 1401410414}
+  - component: {fileID: 1401410416}
   m_Layer: 5
   m_Name: Forest
   m_TagString: Untagged
@@ -513,17 +525,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401410412}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.026179543, w: -0.9996573}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
+  m_LocalScale: {x: 1.5691361, y: 1.9077528, z: 1}
   m_Children: []
-  m_Father: {fileID: 1886009008}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.397}
+  m_Father: {fileID: 962773384}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3237}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.900013, y: -100.9}
-  m_SizeDelta: {x: 922, y: 724.8}
+  m_AnchoredPosition: {x: 22.9, y: -33.99991}
+  m_SizeDelta: {x: 1106.5, y: 724.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401410414
 MonoBehaviour:
@@ -537,14 +549,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 654a2906c8f834944886b37c89c07232, type: 3}
+  m_Texture: {fileID: 2800000, guid: f1b951b01e442fd45862878ef4c5ea03, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -557,6 +569,104 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401410412}
+--- !u!114 &1401410416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401410412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549d102950f38134b931029bf0a985d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleObject: {fileID: 559778134}
+  text: {fileID: 1896234488}
+  Forest: {fileID: 1401410414}
+  InsideForest: {fileID: 1522586871}
+--- !u!1 &1522586869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1522586870}
+  - component: {fileID: 1522586872}
+  - component: {fileID: 1522586871}
+  - component: {fileID: 1522586873}
+  m_Layer: 5
+  m_Name: InsideForest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1522586870
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522586869}
+  m_LocalRotation: {x: 0, y: 0, z: -0.013089582, w: 0.99991435}
+  m_LocalPosition: {x: 0, y: 0, z: -6.9999986}
+  m_LocalScale: {x: 14.612579, y: 10.06275, z: 1}
+  m_Children: []
+  m_Father: {fileID: 962773384}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 22.900043, y: -33.999912}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1522586871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522586869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 7b5122593ce3d23499e3d531481747f9, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1522586872
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522586869}
+--- !u!114 &1522586873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522586869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549d102950f38134b931029bf0a985d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleObject: {fileID: 559778134}
+  text: {fileID: 1896234488}
+  Forest: {fileID: 1401410414}
+  InsideForest: {fileID: 1522586871}
 --- !u!1 &1771130694
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,16 +690,16 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1771130694}
-  m_LocalRotation: {x: -0, y: -0, z: -0.6085501, w: 0.7935155}
+  m_LocalRotation: {x: -0, y: -0, z: -0.06494545, w: 0.99788886}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 962773384}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -74.969}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2167.447}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335, y: 172}
+  m_AnchoredPosition: {x: 441, y: 247.36942}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771130696
@@ -611,7 +721,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 231920ba223c94a488671583917c1ad2, type: 3}
+  m_Texture: {fileID: 2800000, guid: 84abb8bf09b375d4c9fd5137629bed59, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -649,15 +759,14 @@ RectTransform:
   m_GameObject: {fileID: 1886009007}
   m_LocalRotation: {x: -0, y: -0, z: -0.020920029, w: 0.9997812}
   m_LocalPosition: {x: 0, y: 0, z: 53}
-  m_LocalScale: {x: 1.2461224, y: 1.6957881, z: 1}
-  m_Children:
-  - {fileID: 1401410413}
+  m_LocalScale: {x: 1.4953058, y: 1.9077528, z: 1}
+  m_Children: []
   m_Father: {fileID: 962773384}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6783814, y: 52.466988}
+  m_AnchoredPosition: {x: -0.84878, y: 30}
   m_SizeDelta: {x: 991.6, y: 549.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886009009
@@ -721,7 +830,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 962773384}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -780,6 +889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleObject: {fileID: 559778134}
   text: {fileID: 1896234488}
+  Forest: {fileID: 1401410414}
+  InsideForest: {fileID: 1522586871}
 --- !u!1 &2058123444
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class TextAdventure : MonoBehaviour {
 
 	public Text titleObject;
 	public Text text;
+	public RawImage Forest;
+	public RawImage InsideForest;
 	private States myState;
 
 
@@ -47,13 +49,14 @@ public class TextAdventure : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myState = States.homescreen;
+		
 	}
 	
 	
 	// Update is called once per frame
 	void Update () {
 		print (myState);
-		if (myState == States.homescreen) 			{state_homescreen ();} 
+		if 		(myState == States.homescreen) 			{state_homescreen ();} 
 		else if (myState == States.exposition_0)		{state_exposition_0 ();} 
 		else if (myState == States.exposition_1) 		{state_exposition_1 ();}
 		else if (myState == States.exposition_2)		{state_exposition_2 ();}
@@ -86,7 +89,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	private void state_homescreen () {
-		titleObject.text = "The Legend of\n"+
+		titleObject.text = "The Legend Of\n"+
 							"BOOTS";
 		text.text = "Press SPACE to Start";
 					
@@ -96,6 +99,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_exposition_0 () {
+		Destroy(titleObject);
 		text.text = 		"Once upon a time, a poor widowed farmer owed a lot of money to the king. He had three sons.  "+  
 							"The two older sons made fun of the youngest son named Boots.\n\n\n" +
 							"Press SPACE to Continue";
@@ -112,6 +116,8 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_exposition_2 () {
+		Destroy(Forest);
+		Object.Instantiate<RawImage>(InsideForest);
 		text.text = 		"You are given a bag with some bread, cheese, and a knife.  " +
 							"You march out into the forest.  A fork lies in front of you.\n\n" +
 							"Do you go left or right?\n\n\n" +
