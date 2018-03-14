@@ -191,6 +191,20 @@ Prefab:
       value: 
       objectReference: {fileID: 21300008, guid: 528102f6994d2ec42b2f62632f2cd9ff,
         type: 3}
+    - target: {fileID: 1553839574574528, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 212799744345692344, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1225865711
+      objectReference: {fileID: 0}
+    - target: {fileID: 212799744345692344, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
   m_IsPrefabParent: 0
@@ -248,6 +262,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -312,6 +330,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -336,7 +358,7 @@ GameObject:
   - component: {fileID: 346170840}
   - component: {fileID: 346170839}
   - component: {fileID: 346170838}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,8 +410,8 @@ Canvas:
   m_GameObject: {fileID: 346170837}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 603352264}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -474,6 +496,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -537,6 +563,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -599,6 +629,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -675,6 +709,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: 528102f6994d2ec42b2f62632f2cd9ff,
         type: 3}
+    - target: {fileID: 1958451592690340, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d18f6f4a9f00244f9c068c30c450b50, type: 2}
   m_IsPrefabParent: 0
@@ -739,6 +777,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickYellow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
   m_IsPrefabParent: 0
@@ -755,7 +797,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 481859829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,6 +901,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -922,6 +968,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -984,6 +1034,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1142,6 +1196,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -1204,6 +1262,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1268,6 +1330,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -1331,6 +1397,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -1393,6 +1463,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1496,6 +1570,20 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 0ee0cb13483ceb84ebf2f52359204a5e, type: 2}
+    - target: {fileID: 1704942170398294, guid: ccd2c27f240439345bb4083295051822, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 212875351451061866, guid: ccd2c27f240439345bb4083295051822,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1225865711
+      objectReference: {fileID: 0}
+    - target: {fileID: 212875351451061866, guid: ccd2c27f240439345bb4083295051822,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccd2c27f240439345bb4083295051822, type: 2}
   m_IsPrefabParent: 0
@@ -1553,6 +1641,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1657,6 +1749,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -1719,6 +1815,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1824,6 +1924,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -1886,6 +1990,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -1950,6 +2058,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -2012,6 +2124,10 @@ Prefab:
     - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
       propertyPath: m_Name
       value: DiscoBrickGreen (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
@@ -2081,6 +2197,10 @@ Prefab:
     - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
       propertyPath: m_Name
       value: DiscoBrickYellow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
@@ -2209,7 +2329,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1107496320
+  randomSeed: -762068544
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5636,6 +5756,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -5653,7 +5777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630592749}
   - component: {fileID: 1630592750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5821,6 +5945,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -5890,6 +6018,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickYellow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
   m_IsPrefabParent: 0
@@ -5953,6 +6085,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -5971,7 +6107,7 @@ GameObject:
   - component: {fileID: 1903010468}
   - component: {fileID: 1903010470}
   - component: {fileID: 1903010469}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6146,6 +6282,10 @@ Prefab:
       propertyPath: m_Name
       value: DiscoBrickGreen (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1157392728258864, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba26dc0a6338924a8950034f36679cb, type: 2}
   m_IsPrefabParent: 0
@@ -6214,6 +6354,10 @@ Prefab:
     - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
       propertyPath: m_Name
       value: DiscoBrickYellow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715425683690952, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce03f38a08ff4114391a0d589c5eacdf, type: 2}
