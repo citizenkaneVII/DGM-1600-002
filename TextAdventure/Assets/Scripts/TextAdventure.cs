@@ -49,7 +49,6 @@ public class TextAdventure : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myState = States.homescreen;
-		
 	}
 	
 	
@@ -91,8 +90,7 @@ public class TextAdventure : MonoBehaviour {
 	private void state_homescreen () {
 		titleObject.text = "The Legend Of\n"+
 							"BOOTS";
-		text.text = "Press SPACE to Start";
-					
+		text.text = "Press SPACE to Start";					
 		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_0;}
 		else if (Input.GetKeyDown(KeyCode.Return))	{myState = States.exposition_0;} 
 		}
@@ -116,8 +114,6 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_exposition_2 () {
-		Destroy(Forest);
-		Object.Instantiate<RawImage>(InsideForest);
 		text.text = 		"You are given a bag with some bread, cheese, and a knife.  " +
 							"You march out into the forest.  A fork lies in front of you.\n\n" +
 							"Do you go left or right?\n\n\n" +
