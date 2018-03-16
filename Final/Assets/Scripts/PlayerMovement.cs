@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
 	private SpriteRenderer rend;
 	public float Jump;
 	private bool isGrounded;
+	public Vector3 offset;
+	public double myDouble;
+
 
 
 	// Use this for initialization
@@ -46,6 +49,17 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		if (isGrounded && Input.GetButtonDown("Jump")){
+			RaycastHit2D hit = physics2D.Raycast(Transform.position, Vector2.down;
+			Debug.DrawRay(transform.position,Vector3.down,red,0.1f,false)
+			if (hit.collider.tag == "Ground"){
+				Debug.Log("found ground");
+				isGrounded = true;
+			}
+			else{
+				isGrounded = false;
+			}
+
+
 			rigid.AddForce(new Vector2 (0,jump), ForceMode2D.Force);
 		}
 

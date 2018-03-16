@@ -6,8 +6,11 @@ public class TextAdventure : MonoBehaviour {
 
 	public Text titleObject;
 	public Text text;
-	public RawImage Forest;
-	public RawImage InsideForest;
+	public Image backgroundImageObject;
+	public Image foregroundImageObject;
+	public Sprite[] backgroundImages;
+	public Sprite[] foregroundImages;
+	//private int imageNumber;
 	private States myState;
 
 
@@ -49,6 +52,7 @@ public class TextAdventure : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		myState = States.homescreen;
+		backgroundImageObject.sprite = backgroundImages[0];
 	}
 	
 	
@@ -90,7 +94,7 @@ public class TextAdventure : MonoBehaviour {
 	private void state_homescreen () {
 		titleObject.text = "The Legend Of\n"+
 							"BOOTS";
-		text.text = "Press SPACE to Start";					
+		text.text = "Press SPACE to Start";				
 		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_0;}
 		else if (Input.GetKeyDown(KeyCode.Return))	{myState = States.exposition_0;} 
 		}
@@ -114,6 +118,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_exposition_2 () {
+		backgroundImageObject.sprite = backgroundImages[1];
 		text.text = 		"You are given a bag with some bread, cheese, and a knife.  " +
 							"You march out into the forest.  A fork lies in front of you.\n\n" +
 							"Do you go left or right?\n\n\n" +
@@ -125,6 +130,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_right () {
+		backgroundImageObject.sprite = backgroundImages[2];
 		text.text = 		"You reach a dead end.  Brush and trees surround you with no end in sight.\n\n\n" +
 							"F - Go back to the FORK";
 		if 		(Input.GetKeyDown(KeyCode.F))		{myState = States.fork;}
@@ -132,6 +138,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_fork () {
+		backgroundImageObject.sprite = backgroundImages[1];
 		text.text = 		"A Fork lies in front of you.  Do you go left or right?\n\n\n" +
 							"L - go LEFT \n"+
 							"R - go RIGHT";
@@ -141,6 +148,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_left () {
+		backgroundImageObject.sprite = backgroundImages[1];
 		text.text = 		"You reach the clearing where your brother's have chopped wood.\n\n\n " +
 							"L - LOOK around,";
 		if 		(Input.GetKeyDown(KeyCode.L))		{myState = States.look_0;}
@@ -148,6 +156,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_look_0 () {
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"As you walk among the tree stumps, you  see a large foot print in the ground.  "+
 							"You hear a loud CRUNCH.  Looking up, you see a large Troll carrying a great ax.\n\n" +
 							"'I'm goin' ta' eat ya!!' he roars.\n\n" +
