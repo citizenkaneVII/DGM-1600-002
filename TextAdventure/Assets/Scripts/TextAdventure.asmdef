@@ -1,0 +1,9 @@
+{
+    "name": "TextAdventure",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ]
+}

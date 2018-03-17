@@ -8,9 +8,8 @@ public class TextAdventure : MonoBehaviour {
 	public Text text;
 	public Image backgroundImageObject;
 	public Image foregroundImageObject;
-	public Sprite[] backgroundImages;
-	public Sprite[] foregroundImages;
-	//private int imageNumber;
+	public Sprite [] backgroundImages;
+	public Sprite [] foregroundImages;
 	private States myState;
 
 
@@ -92,10 +91,14 @@ public class TextAdventure : MonoBehaviour {
 
 
 	private void state_homescreen () {
+		backgroundImageObject.sprite = backgroundImages[0];
+		foregroundImageObject.sprite = foregroundImages[0];
 		titleObject.text = "The Legend Of\n"+
 							"BOOTS";
-		text.text = "Press SPACE to Start";				
+		text.text = "Press SPACE to Start\n"+
+					"Q to Quit";			
 		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_0;}
+		else if (Input.GetKeyDown(KeyCode.Q))       {Application.Quit(); Debug.Log("Quit Game");}
 		else if (Input.GetKeyDown(KeyCode.Return))	{myState = States.exposition_0;} 
 		}
 	
@@ -106,6 +109,7 @@ public class TextAdventure : MonoBehaviour {
 							"The two older sons made fun of the youngest son named Boots.\n\n\n" +
 							"Press SPACE to Continue";
 		if 		(Input.GetKeyDown(KeyCode.Space)) 	{myState = States.exposition_1;}
+		else if (Input.GetKeyDown(KeyCode.Return))	{myState = States.exposition_1;} 
 		}
 	
 	
@@ -114,11 +118,12 @@ public class TextAdventure : MonoBehaviour {
 							"One day when a troll scared them away, Boots decided to go into the forest.\n\n\n " +
 							"Press SPACE to Continue";
 		if 		(Input.GetKeyDown(KeyCode.Space))	{myState = States.exposition_2;}
+		else if (Input.GetKeyDown(KeyCode.Return))	{myState = States.exposition_2;} 
 		}
 
 
 	void state_exposition_2 () {
-		backgroundImageObject.sprite = backgroundImages[1];
+		backgroundImageObject.sprite = backgroundImages[3];
 		text.text = 		"You are given a bag with some bread, cheese, and a knife.  " +
 							"You march out into the forest.  A fork lies in front of you.\n\n" +
 							"Do you go left or right?\n\n\n" +
@@ -138,7 +143,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_fork () {
-		backgroundImageObject.sprite = backgroundImages[1];
+		backgroundImageObject.sprite = backgroundImages[3];
 		text.text = 		"A Fork lies in front of you.  Do you go left or right?\n\n\n" +
 							"L - go LEFT \n"+
 							"R - go RIGHT";
@@ -187,6 +192,8 @@ public class TextAdventure : MonoBehaviour {
 
 	
 	void state_runaway_0 () {
+		backgroundImageObject.sprite = backgroundImages[4];
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"You attempt to run away but before you even get the chance to turn around, " +
 							"the Troll picks you up with his massive hands and bites off your head!\n\n" +
 							"GAME OVER\n\n\n" +
@@ -196,6 +203,8 @@ public class TextAdventure : MonoBehaviour {
 			
 
 	void state_runaway_1 () {
+		backgroundImageObject.sprite = backgroundImages[3];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text =			"You run as he stuffs his face.  Unfortunately, the bread is not enough. " +
 							"He begins to chase after you.\n\n\n" +
 							"R - RUN home\n" +
@@ -223,6 +232,8 @@ public class TextAdventure : MonoBehaviour {
 												
 													
 	void state_knife_0 () {
+		backgroundImageObject.sprite = backgroundImages[4];
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"You attempt to stab him in an all out attack.  Before you can stab him, " +
 							"he picks you up in one swipe and bites your head off.\n\n" +
 							"GAME OVER\n\n\n"+
@@ -241,6 +252,8 @@ public class TextAdventure : MonoBehaviour {
 		
 		
 	void state_hide () {
+		backgroundImageObject.sprite = backgroundImages[3];
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"You hide behind some bushes.  He stops nearby in a grove, screaming \n\n" +
 							"'I'm goin' kill you boy!!!'\n\n" +
 							"He continues to look for you, but he can't find you.  Eventually, he gives up. " +
@@ -251,6 +264,8 @@ public class TextAdventure : MonoBehaviour {
 		
 		
 	void state_vagabond () {
+		backgroundImageObject.sprite = backgroundImages[7];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text = 		"You make it home, but it's clear that you can't go back in the woods.  You and your family " +
 							"are forced to leave the woods and become vagabonds.\n\n" +
 							"GAME OVER \n\n\n" +
@@ -260,6 +275,8 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_slaughter () {
+		backgroundImageObject.sprite = backgroundImages[0];
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"You run all the way home, but your speed couldn't outmatch his giant leaps.  As you run into your house, " +
 							"the Troll runs at it and smashes the thing to pieces. You and your entire family is slaughtered.\n\n" +
 							"GAME OVER \n\n\n" +
@@ -269,6 +286,7 @@ public class TextAdventure : MonoBehaviour {
 	
 	
 	void state_cheese () {
+		foregroundImageObject.sprite = foregroundImages[2];
 		text.text = 		"You pull out the cheese.  The Troll looks at it.\n\n" +
 							"'Oi! What's that you got there boy?' he snarls.\n\n\n" +
 							"O - OFFER\n" +
@@ -281,6 +299,7 @@ public class TextAdventure : MonoBehaviour {
 
 	
 	void state_offer_1 () {
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"'It's cheese.  Would you like some?'\n\n" +
 							"Despite your best intentions, the Troll spits,\n\n" +
 							"'I HATE stinkin' cheese!!!' \n\n" +
@@ -295,6 +314,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_lie () {
+		foregroundImageObject.sprite = foregroundImages[2];
 		text.text = 		"You wave the cheese in front of him.\n\n" +
 							"'You see this troll?  You see what I got in my hand?'.\n\n" +
 							"'WHAT is it?!?' yells the Troll in anger.\n\n\n"+
@@ -308,6 +328,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_magicgem_dragonturd () {
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"'BULLOCKS!!' the Troll shouts.  It looks like he called your bluff.\n\n\n" +
 							"R - RUNAWAY\n" +
 							"K - Use KNIFE\n" +
@@ -321,6 +342,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_throw_it () {
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"You throw the cheese, but it bounces off of him.  Angry, he runs at you.\n\n\n" +
 							"R - RUNAWAY\n" +
 							"K - Use KNIFE\n";
@@ -340,6 +362,7 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_squeeze () {
+		foregroundImageObject.sprite = foregroundImages[1];
 		text.text = 		"Whey comes out of the cheese in the form of a milky liquid.  The Troll is confused.\n\n" +
 							"'What is this?' asks the Troll, nevousness in his voice.  You shout out:\n\n" +
 							"'I am so strong, I can squeeze water from this stone, and I will crush you head unless you-'\n\n\n" +
@@ -355,6 +378,8 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_axe () {
+		backgroundImageObject.sprite = backgroundImages[6];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text = 		"You order the Troll to give you his Ax and depart forever.  While it's heavy, " +
 							"you know getting this ax home is beneficial because it will prove to your brothers " + 
 							"that you have conquered the troll with your wit.  You all go back to working in the forest, " +
@@ -365,7 +390,9 @@ public class TextAdventure : MonoBehaviour {
 		}
 
 
-	void state_cut () {
+	void state_cut () {		
+		backgroundImageObject.sprite = backgroundImages[6];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text = 		"The Troll uses his large ax and cuts all the wood in the clearing.  " +
 							"You order him to bring it back to your house.  In exchange, you promise that " +
 							"your paths will never cross again.  You sell the wood and pay all of your father's debts.\n\n" +
@@ -376,6 +403,8 @@ public class TextAdventure : MonoBehaviour {
 
 
 	void state_never () {
+		backgroundImageObject.sprite = backgroundImages[7];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text = 		"You order him to never come into these woods.  While this seems well and good, " +
 							"your brother's refuse to believe you and never go into the woods again.  " +
 							"Unable to pay your father's debts, you all become vagabonds.\n\n" +
@@ -386,6 +415,8 @@ public class TextAdventure : MonoBehaviour {
 
 	
 	void state_gold () {
+		backgroundImageObject.sprite = backgroundImages[7];
+		foregroundImageObject.sprite = foregroundImages[0];
 		text.text = 		"In fear, he gives you his Gold and departs.  You look in your hands and see that " + 
 							"you have enough to pay off your Father's debts.  Returning home, your brothers accuse " +
 							"you of being a thief and you are shunned from your house.  You are a lone vagabond.\n\n" +
