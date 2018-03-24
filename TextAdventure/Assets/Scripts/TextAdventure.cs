@@ -11,6 +11,7 @@ public class TextAdventure : MonoBehaviour {
 	public Sprite [] backgroundImages;
 	public Sprite [] foregroundImages;
 	private States myState;
+	private int GameManager;
 
 
 	private enum States 
@@ -46,7 +47,7 @@ public class TextAdventure : MonoBehaviour {
 			axe,
 		};
 	
-	
+
 	
 	// Use this for initialization
 	void Start () {

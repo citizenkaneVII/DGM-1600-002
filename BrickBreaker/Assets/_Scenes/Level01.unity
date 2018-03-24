@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872692, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -234,6 +234,36 @@ Prefab:
         type: 2}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: 0.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
@@ -979,7 +1009,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d31af4519f026b646b675d5dc6ba24ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 134c568e6d3773e45aca08db77c184f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2258,6 +2288,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82932835350377958, guid: 2205df251b4d3e54bafd1a877d525b17,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114080364154043252, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
@@ -2323,6 +2358,16 @@ Prefab:
         type: 2}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 58287014684856808, guid: 3fc67592c0151f74b8e214e8ff148e49,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 58287014684856808, guid: 3fc67592c0151f74b8e214e8ff148e49,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.28038812
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fc67592c0151f74b8e214e8ff148e49, type: 2}

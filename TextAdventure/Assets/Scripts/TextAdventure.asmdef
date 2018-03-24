@@ -3,6 +3,8 @@
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [
+        "Editor",
+        "WebGL",
         "WindowsStandalone32",
         "WindowsStandalone64"
     ]

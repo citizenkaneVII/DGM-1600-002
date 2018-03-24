@@ -420,6 +420,46 @@ Prefab:
       propertyPath: m_Name
       value: DeathPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 60727849198088454, guid: 658c83e0a89fe964ca4aa556115df609,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: 0.06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 658c83e0a89fe964ca4aa556115df609, type: 2}
   m_IsPrefabParent: 0
@@ -12964,6 +13004,16 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82932835350377958, guid: 2205df251b4d3e54bafd1a877d525b17,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82932835350377958, guid: 2205df251b4d3e54bafd1a877d525b17,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.696
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114080364154043252, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2205df251b4d3e54bafd1a877d525b17, type: 2}
@@ -13149,6 +13199,16 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 9451a61a891a4084c8bb7cff782136dd, type: 2}
+    - target: {fileID: 58739601856923524, guid: ccd2c27f240439345bb4083295051822,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.00024294853
+      objectReference: {fileID: 0}
+    - target: {fileID: 58739601856923524, guid: ccd2c27f240439345bb4083295051822,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.2806313
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccd2c27f240439345bb4083295051822, type: 2}
   m_IsPrefabParent: 0
