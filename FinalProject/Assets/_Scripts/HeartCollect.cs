@@ -10,7 +10,7 @@ public class HeartCollect : MonoBehaviour {
 	
 
 	void Update () {
-		RotateSpeed = 2;
+		RotateSpeed = 9;
 		transform.Rotate (0, RotateSpeed, 0, Space.World);
 	}
 
