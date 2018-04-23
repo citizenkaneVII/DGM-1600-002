@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\_Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\_Scripts\HeartCollect.cs" />
+     <Compile Include="Assets\_Scripts\PlayerCasting.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
