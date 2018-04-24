@@ -18,6 +18,8 @@ public class Quest001Take : MonoBehaviour {
 
 	void OnMouseOver () {
 		if (TheDistance <= 3) {
+			Screen.lockCursor = false;
+			Cursor.visible = true;
 			ActionDisplay.SetActive (true);
 			ActionText.SetActive (true);
 		}
