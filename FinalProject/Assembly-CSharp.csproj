@@ -69,6 +69,9 @@
      <Compile Include="Assets\_Scripts\Quests\Quest001Complete.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001Take.cs" />
      <Compile Include="Assets\_Scripts\SwingSword.cs" />
+     <Compile Include="Assets\Objects\Knight\scripts\rotator.cs" />
+     <None Include="Assets\Objects\Knight\shaders\doublesidedshader.shader" />
+     <None Include="Assets\Objects\Modular Fantasy Bridges\README.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/citizenkaneVII/Documents/GIT Respositories/DGM-1600-002/FinalProject/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
