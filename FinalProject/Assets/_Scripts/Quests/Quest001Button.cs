@@ -12,15 +12,28 @@ public class Quest001Button : MonoBehaviour {
 	public GameObject Objective01;
 	public GameObject Objective02;
 	public GameObject Objective03;
+	public GameObject ExMark;
+	public GameObject TheNotice;
+	public GameObject NoticeTrigger;
 
 	public void AcceptQuest () {
 		ThePlayer.SetActive (true);
 		Noticecam.SetActive (false);
 		UIQuest.SetActive (false);
-		StartCoroutine (SetQuestUI());
+		StartCoroutine (SetQuestUI ());
 	}
 
+	public void DeclineQuest () {
+		ThePlayer.SetActive (true);
+		Noticecam.SetActive (false);
+		UIQuest.SetActive (false);
+	}
+
+
 	IEnumerator SetQuestUI () {
+		ExMark.SetActive (false);
+		TheNotice.SetActive (false);
+		NoticeTrigger.SetActive (false);
 		ActiviveQuestBox.GetComponent <Text>().text = "My First Weapon";
 		Objective01.GetComponent <Text>().text = "Reach the clearing in the woods";
 		Objective02.GetComponent <Text>().text = "Open the chest";
@@ -41,9 +54,5 @@ public class Quest001Button : MonoBehaviour {
 		Objective03.SetActive (false);
 	}
 
-	public void DeclineQuest () {
-		ThePlayer.SetActive (true);
-		Noticecam.SetActive (false);
-		UIQuest.SetActive (false);
-	}
+
 }

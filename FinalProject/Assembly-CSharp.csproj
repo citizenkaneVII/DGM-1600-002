@@ -51,15 +51,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\AttackBlocker.cs" />
      <Compile Include="Assets\_Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\_Scripts\HeartCollect.cs" />
      <Compile Include="Assets\_Scripts\PlayerCasting.cs" />
      <Compile Include="Assets\_Scripts\QuestManager.cs" />
+     <Compile Include="Assets\_Scripts\Quests\GlobalExp.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001\Q001Objective01.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001\Q001Objective02.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001\Q001Objective03.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001Button.cs" />
+     <Compile Include="Assets\_Scripts\Quests\Quest001Complete.cs" />
      <Compile Include="Assets\_Scripts\Quests\Quest001Take.cs" />
+     <Compile Include="Assets\_Scripts\SwingSword.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/citizenkaneVII/Documents/GIT Respositories/DGM-1600-002/FinalProject/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

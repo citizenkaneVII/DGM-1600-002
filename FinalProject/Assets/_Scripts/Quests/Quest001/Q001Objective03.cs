@@ -13,6 +13,9 @@ public class Q001Objective03 : MonoBehaviour {
 	public GameObject TheObjective;
 	public int CloseObjective;
 	public GameObject ChestBlock;
+	
+	public GameObject QuestComplete;
+	public  GameObject ExMark;
 
 	// Update is called once per frame
 	void Update () {
@@ -44,6 +47,8 @@ public class Q001Objective03 : MonoBehaviour {
 				CloseObjective = 3;
 				ActionText.SetActive (false);
 				ActionDisplay.SetActive (false);
+				ExMark.SetActive (true);
+				QuestComplete.SetActive (true);
 			}
 		}
 	}
