@@ -55,6 +55,8 @@
      <Compile Include="Assets\_Scripts\Cut Scenes\Scene01.cs" />
      <Compile Include="Assets\_Scripts\EnemyScripts\InflictDamage.cs" />
      <Compile Include="Assets\_Scripts\EnemyScripts\SpiderEnemy.cs" />
+     <Compile Include="Assets\_Scripts\Experience\GlobalLevel.cs" />
+     <Compile Include="Assets\_Scripts\Experience\GlobalXP.cs" />
      <Compile Include="Assets\_Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\_Scripts\HeartCollect.cs" />
      <Compile Include="Assets\_Scripts\PlayerCasting.cs" />

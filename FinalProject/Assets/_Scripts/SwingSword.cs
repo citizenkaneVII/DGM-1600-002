@@ -17,7 +17,7 @@ public class SwingSword : MonoBehaviour {
 		SwordStatus = 1;
 		TheSword.GetComponent<Animation> ().Play ("ElvenSwordAnim");
 		SwordStatus = 2;
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.0f);
 		SwordStatus = 0;
 	}
 }
