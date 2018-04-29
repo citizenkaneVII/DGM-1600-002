@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\AIScripts\SpiderAI.cs" />
      <Compile Include="Assets\_Scripts\AttackBlocker.cs" />
      <Compile Include="Assets\_Scripts\Cut Scenes\Scene01.cs" />
      <Compile Include="Assets\_Scripts\EnemyScripts\InflictDamage.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\_Scripts\Experience\GlobalXP.cs" />
      <Compile Include="Assets\_Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\_Scripts\HeartCollect.cs" />
+     <Compile Include="Assets\_Scripts\NPCInteractions\NPC001.cs" />
      <Compile Include="Assets\_Scripts\PlayerCasting.cs" />
      <Compile Include="Assets\_Scripts\QuestManager.cs" />
      <Compile Include="Assets\_Scripts\Quests\GlobalExp.cs" />
